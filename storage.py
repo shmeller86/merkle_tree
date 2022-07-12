@@ -96,7 +96,7 @@ def merkleTreeDependens(address: str)-> dict:
 
 
 
-len_address = 15
+len_address = 7
 try:
     adress_list = getAddressList()
     hashes = merkleTreeEncode(adress_list)
@@ -110,5 +110,5 @@ hash_root = hashes[len(hashes)-1][0]
 print(f"root hash: {hash_root} \n")
 
 
-dep = merkleTreeDependens("0x7499797cc04091372f3bc16c2a51f5ade6777952")
+dep = merkleTreeDependens("0xcc28d2781aff9db54861f4a29624eefdfff0d6ec")
 pp(dep)
